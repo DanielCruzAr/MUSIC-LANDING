@@ -14,7 +14,7 @@ h2 {
 }
 
 h3 {
-    @apply text-xl lg:text-2xl font-extrabold;
+    @apply text-lg md:text-xl lg:text-2xl font-extrabold;
 }
 
 h4 {
@@ -60,14 +60,6 @@ h5 {
 
 .angular-gradient {
     @apply bg-gradient-to-r from-secondary-pink to-secondary-blue;
-    /* background: conic-gradient(
-        #0A0C10 0%,
-        #0A0C10 19%,
-        #E52996 51%,
-        #18457C 55%,
-        #18457C 76%,
-        #0A0C10 86%,
-        ); */
 }
 
 /* BUTTONS */
