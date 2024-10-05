@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body
+        class="relative bg-dark font-body text-white overflow-hidden overflow-y-auto"
+    >
+        <!-- HEADER -->
+        <div class="glassy-header">
+            <img src="icons/logo.png" alt="logo" />
+            <div class="px-4 cursor-pointer lg:hidden" id="burger">
+                <svg
+                    class="w-6"
+                    data-slot="icon"
+                    fill="none"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    ></path>
+                </svg>
+            </div>
+            <div class="hidden lg:flex lg:gap-2">
+                <a href="#" class="header-btn">Home</a>
+                <a href="#" class="header-btn">New arrivals</a>
+                <a href="#" class="header-btn">Download</a>
+                <a href="#" class="header-btn">Pricing</a>
+            </div>
+            <div class="hidden lg:flex lg:gap-2">
+                <a href="#" class="header-btn">Log in</a>
+                <a href="#" class="btn-secondary">Sign up</a>
+            </div>
+        </div>
+
+        <!-- <div
+            class="absolute top-32 left-1/2 w-[45vw] h-[90vh] transform rotate-45 z-[-2] angular-gradient blur-[192px]"
+        ></div> -->
+
+        <main class="mt-20">
+            <!-- HERO -->
+            <section class="flex flex-row">
+                <div class="mt-12">
+                    <div>
+                        <h1 class="mb-10 gradient-headings">
+                            Music Without Limits
+                        </h1>
+                        <p class=".p1-lg text-grey-dark max-w-sm">
+                            Say goodbye to interruptions and enjoy uninterrupted
+                            music streaming. With our ad-free platform, you'll
+                            have access to millions of songs.
+                        </p>
+                    </div>
+                    <div class="mt-14">
+                        <a href="#" class="btn-primary">Sign Up</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img
+                        src="img/astronaut.png"
+                        class="object-contain w-full z-[-1]"
+                    />
+                    <div
+                        class="hidden md:flex absolute -bottom-12 left-1/4 transform -translate-x-1/2 w-[2000px] h-[15vh] bg-dark z-[-1] blur-lg"
+                    ></div>
+                </div>
+            </section>
+
+            <!-- ALBUMS -->
+            <section class="relative">
+                <div
+                    class="absolute top-0 left-0 w-full h-[25vh] bg-dark z-[-1] blur-lg"
+                ></div>
+                <div class="px-8 mb-8">
+                    <h2 class="gradient-headings text-center py-4">
+                        The Hottest Tracks of the Week
+                    </h2>
+                    <p class="p1-lg text-grey-dark text-center">
+                        Say goodbye to interruptions and enjoy uninterrupted
+                        music streaming. With our ad-free platform, you’ll have
+                        access to millions of songs
+                    </p>
+                </div>
+                <!-- CARDS CONTAINER -->
+                <div class="relative flex flex-row gap-4 md:gap-16">
+                    <!--  CARD 1 -->
+                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                        <div class="relative">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <img src="img/album1.jpeg" class="w-full" />
+                        </div>
+                        <div class="py-4">
+                            <h3 class="mb-1">Sense</h3>
+                            <p class="p1-md text-grey-dark">Mark Band</p>
+                        </div>
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#B9B9B9"
+                            >
+                                <path
+                                    d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+                                />
+                            </svg>
+                            <p class="hidden lg:block text-grey ml-[10px]">139k Listens</p>
+                            <p class="lg:hidden text-grey ml-[10px]">139k</p>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                        <div class="relative">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <img src="img/album2.jpeg" class="w-full" />
+                        </div>
+                        <div class="py-4">
+                            <h3 class="mb-1">Momentum</h3>
+                            <p class="p1-md text-grey-dark">Modesty</p>
+                        </div>
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#B9B9B9"
+                            >
+                                <path
+                                    d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+                                />
+                            </svg>
+                            <p class="hidden lg:block text-grey ml-[10px]">312k Listens</p>
+                            <p class="lg:hidden text-grey ml-[10px]">312k</p>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                        <div class="relative">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <img src="img/album3.jpeg" class="w-full" />
+                        </div>
+                        <div class="py-4">
+                            <h3 class="mb-1">Trance</h3>
+                            <p class="p1-md text-grey-dark">Hemensy</p>
+                        </div>
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#B9B9B9"
+                            >
+                                <path
+                                    d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+                                />
+                            </svg>
+                            <p class="hidden lg:block text-grey ml-[10px]">176k Listens</p>
+                            <p class="lg:hidden text-grey ml-[10px]">176k</p>
+                        </div>
+                    </div>
+
+                    <!-- RECTANGLE 2 -->
+                    <div
+                        class="absolute top-1/2 -translate-y-1/2 w-full h-[25vh] z-[-1] blur-3xl rectangle2-gradient"
+                    ></div>
+                </div>
+            </section>
+
+            <!-- GENRES -->
+            <section class="mt-12">
+                <div class="mb-20">
+                    <h2 class="gradient-headings mb-8">
+                        Explore endless music libraries
+                    </h2>
+                    <p class="p1-lg text-grey-dark">
+                        Say goodbye to interruptions and enjoy uninterrupted
+                        music streaming. With our ad-free platform, you’ll have
+                        access to millions of songs
+                    </p>
+                </div>
+                <!-- CARDS CONTAINER -->
+                <div class="flex gap-6">
+                    <!-- CARD 1 -->
+                    <div class="genre-card">
+                        <div class="relative">
+                            <img
+                                src="img/hip-hop.jpeg"
+                                alt="hip-hop"
+                                class="z-[-1] w-full rounded-3xl"
+                            />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play-secondary"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <div class="genre-text-container bg-dark">
+                                <h3 class="mb-2">Hip Hop</h3>
+                                <div class="flex">
+                                    <svg
+                                        data-slot="icon"
+                                        fill="none"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        class="text-grey w-6 h-6 mr-2"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
+                                        ></path>
+                                    </svg>
+                                    <p class="ui-md text-grey">516 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mirror-img bg-[url('img/hip-hop.jpg')]"
+                        ></div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="genre-card">
+                        <div class="relative">
+                            <img
+                                src="img/soul.jpeg"
+                                alt="hip-hop"
+                                class="z-[-1] w-full rounded-3xl"
+                            />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play-secondary"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <div class="genre-text-container bg-[#919191]">
+                                <h3 class="mb-2">Soul</h3>
+                                <div class="flex">
+                                    <svg
+                                        data-slot="icon"
+                                        fill="none"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        class="text-grey w-6 h-6 mr-2"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
+                                        ></path>
+                                    </svg>
+                                    <p class="ui-md text-grey">884 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mirror-img bg-[url('img/soul.jpg')]"></div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="genre-card">
+                        <div class="relative">
+                            <img
+                                src="img/phonk.jpeg"
+                                alt="hip-hop"
+                                class="z-[-1] w-full rounded-3xl"
+                            />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play-secondary"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <div class="genre-text-container bg-[#5D2A0D]">
+                                <h3 class="mb-2">Phonk</h3>
+                                <div class="flex">
+                                    <svg
+                                        data-slot="icon"
+                                        fill="none"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        class="text-grey w-6 h-6 mr-2"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
+                                        ></path>
+                                    </svg>
+                                    <p class="ui-md text-grey">115 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mirror-img bg-[url('img/phonk.jpg')]"></div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="genre-card">
+                        <div class="relative">
+                            <img
+                                src="img/deep-house.jpeg"
+                                alt="hip-hop"
+                                class="z-[-1] w-full rounded-3xl"
+                            />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 -960 960 960"
+                                width="48px"
+                                fill="#FFFFFF"
+                                class="play-secondary"
+                            >
+                                <path
+                                    d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"
+                                />
+                            </svg>
+                            <div class="genre-text-container bg-dark">
+                                <h3 class="mb-2">Deep House</h3>
+                                <div class="flex">
+                                    <svg
+                                        data-slot="icon"
+                                        fill="none"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        class="text-grey w-6 h-6 mr-2"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
+                                        ></path>
+                                    </svg>
+                                    <p class="ui-md text-grey">731 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mirror-img bg-[url('img/deep-house.jpg')]"
+                        ></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ARTISTS -->
+            <section class="items-start">
+                <div class="px-8 mb-8">
+                    <h2 class="gradient-headings text-center py-4">
+                        Trending Artists
+                    </h2>
+                    <p class="p1-lg text-grey-dark text-center">
+                        Discover the hottest and most popular artists in the
+                        industry today. Keep your music library fresh and
+                        up-to-date with our curated selection of trending
+                        musicians, bands, and singers. From emerging talents to
+                        established stars, we’ve got you covered.
+                    </p>
+                </div>
+                <!-- CARDS CONTAINER -->
+                <div class="relative flex gap-4 w-full h-[50vh] items-start">
+                    <!-- CARD 1 -->
+                    <div class="glassy items-center px-4 py-12 gap-6">
+                        <div
+                            class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
+                        >
+                            <img
+                                src="img/artist1.jpg"
+                                alt="artist1"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <h4>Luca Vetti</h4>
+                                <p class="ui-label-md text-grey-blue">
+                                    55 songs
+                                </p>
+                            </div>
+                            <div class="flex">
+                                <p class="ui-label-sb text-grey">Explore</p>
+                                <p class="ui-label-sb text-grey ml-2">-></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="glassy items-center px-4 py-12 gap-6 mt-12">
+                        <div
+                            class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
+                        >
+                            <img
+                                src="img/artist2.jpg"
+                                alt="artist1"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <h4>Apashe</h4>
+                                <p class="ui-label-md text-grey-blue">
+                                    32 songs
+                                </p>
+                            </div>
+                            <div class="flex">
+                                <p class="ui-label-sb text-grey">Explore</p>
+                                <p class="ui-label-sb text-grey ml-2">-></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="glassy items-center px-4 py-12 gap-6">
+                        <div
+                            class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
+                        >
+                            <img
+                                src="img/artist5.jpg"
+                                alt="artist3"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <h4>Noah West</h4>
+                                <p class="ui-label-md text-grey-blue">
+                                    27 songs
+                                </p>
+                            </div>
+                            <div class="flex">
+                                <p class="ui-label-sb text-grey">Explore</p>
+                                <p class="ui-label-sb text-grey ml-2">-></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="glassy items-center px-4 py-12 gap-6 mt-12">
+                        <div
+                            class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
+                        >
+                            <img
+                                src="img/artist4.jpg"
+                                alt="artist4"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <h4>Anonymus</h4>
+                                <p class="ui-label-md text-grey-blue">
+                                    49 songs
+                                </p>
+                            </div>
+                            <div class="flex">
+                                <p class="ui-label-sb text-grey">Explore</p>
+                                <p class="ui-label-sb text-grey ml-2">-></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="glassy items-center px-4 py-12 gap-6">
+                        <div
+                            class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
+                        >
+                            <img
+                                src="img/artist3.jpg"
+                                alt="artist1"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <h4>M. Blaze</h4>
+                                <p class="ui-label-md text-grey-blue">
+                                    19 songs
+                                </p>
+                            </div>
+                            <div class="flex">
+                                <p class="ui-label-sb text-grey">Explore</p>
+                                <p class="ui-label-sb text-grey ml-2">-></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RECTANGLE -->
+                    <div
+                        class="absolute top-10 w-screen h-[25vh] z-[-1] rectangle3-gradient blur-[192px]"
+                    ></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex flex-col gap-12 px-12 md:px-20 lg:px-28 xl:px-52">
+            <div class="w-full h-12 bg-dark blur-3xl"></div>
+            <div class="flex justify-between">
+                <img
+                    src="icons/logo.png"
+                    alt="logo"
+                    class="w-[48px] h-[48px]"
+                />
+                <div class="flex gap-8">
+                    <div class="flex flex-col gap-2">
+                        <a href="#" class="p1-sm text-grey-blue">Get started</a>
+                        <a href="#" class="p1-sm text-grey-light"
+                            >Download app</a
+                        >
+                        <a href="#" class="p1-sm text-grey-light"
+                            >New releases</a
+                        >
+                        <a href="#" class="p1-sm text-grey-light">Originals</a>
+                        <a href="#" class="p1-sm text-grey-light">Plans</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="#" class="p1-sm text-grey-blue">Account</a>
+                        <a href="#" class="p1-sm text-grey-light">Sign in</a>
+                        <a href="#" class="p1-sm text-grey-light">Platform</a>
+                        <a href="#" class="p1-sm text-grey-light">Support</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="#" class="p1-sm text-grey-blue">Pride</a>
+                        <a href="#" class="p1-sm text-grey-light">Partners</a>
+                        <a href="#" class="p1-sm text-grey-light">Careers</a>
+                        <a href="#" class="p1-sm text-grey-light">Press</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="btn-primary">Sign Up</a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between items-center p-8">
+                <div class="flex items-center gap-8 py-10">
+                    <p class="p1-sm text-grey-dark">
+                        Say goodbye to interruptions and enjoy uninterrupted
+                        music streaming.
+                    </p>
+                    <div class="flex gap-4">
+                        <svg
+                            data-slot="icon"
+                            fill="none"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="text-grey-light w-[0.875rem] h-[0.875rem]"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                            ></path>
+                        </svg>
+                        <svg
+                            data-slot="icon"
+                            fill="none"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="text-grey-light w-[0.875rem] h-[0.875rem]"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                            ></path>
+                        </svg>
+                        <svg
+                            data-slot="icon"
+                            fill="none"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="text-grey-light w-[0.875rem] h-[0.875rem]"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    class="flex py-10 gap-28 border-t-2 border-grey-dark border-opacity-30 shadow-lg"
+                >
+                    <a class="p1-sm text-grey-dark">@2024</a>
+                    <a class="p1-sm text-grey-dark">Cookie settings</a>
+                    <a class="p1-sm text-grey-dark">Terms and conditions</a>
+                    <a class="p1-sm text-grey-dark">Privacy policy</a>
+                    <a class="p1-sm text-grey-dark">Modern slavery statement</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

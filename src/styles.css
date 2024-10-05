@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONTS */
+h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold;
+}
+
+h2 {
+    @apply text-2xl lg:text-5xl font-extrabold;
+}
+
+h3 {
+    @apply text-xl lg:text-2xl font-extrabold;
+}
+
+h4 {
+    @apply text-xl font-extrabold;
+}
+
+h5 {
+    @apply text-lg font-medium;
+}
+
+.p1-lg {
+    @apply text-lg font-normal;
+}
+
+.p1-md {
+    @apply text-sm md:text-base font-normal;
+}
+
+.p1-sm {
+    @apply text-sm font-normal;
+}
+
+.ui-label-sb {
+    @apply text-base font-semibold;
+}
+
+.ui-label-md {
+    @apply text-base font-medium;
+}
+
+/* COLORS */
+.gradient-headings {
+    @apply bg-clip-text text-transparent-bg bg-gradient-to-b from-white to-[rgba(255,255,255,0.38)];
+}
+
+.rectangle2-gradient {
+    @apply bg-gradient-to-r from-dark via-secondary-violet;
+}
+
+.rectangle3-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-secondary-blue to-dark;
+}
+
+.angular-gradient {
+    @apply bg-gradient-to-r from-secondary-pink to-secondary-blue;
+    /* background: conic-gradient(
+        #0A0C10 0%,
+        #0A0C10 19%,
+        #E52996 51%,
+        #18457C 55%,
+        #18457C 76%,
+        #0A0C10 86%,
+        ); */
+}
+
+/* BUTTONS */
+a {
+    @apply hover:scale-105 transform transition duration-300 cursor-pointer;
+}
+
+.header-btn {
+    @apply rounded-2xl px-6 py-4 hover:bg-white hover:bg-opacity-15 transform transition ease-out duration-500;
+}
+
+.btn-primary {
+    @apply rounded-xl px-8 py-4 cursor-pointer tracking-wider bg-red text-base hover:bg-white hover:text-red transition ease-out duration-500;
+}
+
+.btn-secondary {
+    @apply rounded-2xl px-6 py-4 bg-white bg-opacity-15 hover:bg-white hover:text-dark transition ease-out duration-500;
+}
+
+.play {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer tracking-wider;
+}
+
+.play-secondary {
+    @apply absolute top-1/4 left-1/2 transform -translate-x-1/2 cursor-pointer tracking-wider hover:scale-105 transition duration-300;
+}
+
+/* CONTAINERS */
+section {
+    @apply flex flex-col px-12 md:px-20 lg:px-28 xl:px-52 h-screen;
+}
+
+.glassy {
+    @apply flex flex-col flex-1 rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg hover:scale-105 transform transition duration-300;
+}
+
+.glassy-header {
+    @apply flex px-10 mt-8 mx-12 lg:mx-20 justify-between items-center rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg;
+}
+
+.genre-card {
+    @apply flex flex-1 flex-col gap-4 h-full hover:scale-105 transform transition duration-300;
+}
+
+.mirror-img {
+    @apply w-full h-8 bg-cover bg-no-repeat bg-[center_77%] blur-[8px];
+}
+
+/* genres containers */
+.genre-text-container {
+    @apply absolute bottom-0 flex flex-col items-center w-full py-8 bg-opacity-10 backdrop-blur-sm;
+}
+
+/* OTHERS */
+.hero-img {
+    @apply hidden md:flex relative md:w-full lg:w-3/4 h-fit z-[-1];
+}
