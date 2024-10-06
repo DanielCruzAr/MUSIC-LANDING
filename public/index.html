@@ -45,7 +45,7 @@
             class="absolute top-44 -right-12 w-1/2 h-[50vh] transform -translate-x-1/4 -rotate-45 z-[-1] angular-gradient blur-[192px]"
         ></div>
 
-        <main class="flex flex-col my-20 gap-16">
+        <main class="flex flex-col my-20 gap-20">
             <!-- HERO -->
             <section class="flex flex-row">
                 <div class="mt-12">
@@ -90,9 +90,9 @@
                     </p>
                 </div>
                 <!-- CARDS CONTAINER -->
-                <div class="relative flex flex-row gap-4 md:gap-16">
+                <div class="relative grid grid-cols-4 md:grid-cols-3 gap-4 md:gap-16">
                     <!--  CARD 1 -->
-                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                    <div class="glassy col-start-2 col-span-2 md:col-start-1 md:col-span-1 px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
                         <div class="relative">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <!-- CARD 2 -->
-                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                    <div class="glassy col-span-2 md:col-span-1 px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
                         <div class="relative">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                     <!-- CARD 3 -->
-                    <div class="glassy px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
+                    <div class="glassy col-span-2 md:col-span-1 px-8 py-6 md:px-[40px] md:py-[30px] lg:px-[50px] lg:py-[40px]">
                         <div class="relative">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +223,7 @@
                     </p>
                 </div>
                 <!-- CARDS CONTAINER -->
-                <div class="flex gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <!-- CARD 1 -->
                     <div class="genre-card">
                         <div class="relative">
@@ -424,7 +424,7 @@
                 <!-- CARDS CONTAINER -->
                 <div class="relative flex gap-4 w-full h-[50vh] items-start">
                     <!-- CARD 1 -->
-                    <div class="glassy items-center px-4 py-12 gap-6">
+                    <div class="hidden md:flex flex-1 flex-col rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg hover:scale-105 transform transition duration-300 items-center px-4 py-12 gap-6">
                         <div
                             class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
                         >
@@ -448,7 +448,7 @@
                         </div>
                     </div>
                     <!-- CARD 2 -->
-                    <div class="glassy items-center px-4 py-12 gap-6 mt-12">
+                    <div class="glassy flex-1 items-center px-4 py-12 gap-6 mt-12">
                         <div
                             class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
                         >
@@ -472,7 +472,7 @@
                         </div>
                     </div>
                     <!-- CARD 3 -->
-                    <div class="glassy items-center px-4 py-12 gap-6">
+                    <div class="glassy flex-1 items-center px-4 py-12 gap-6">
                         <div
                             class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
                         >
@@ -496,7 +496,7 @@
                         </div>
                     </div>
                     <!-- CARD 4 -->
-                    <div class="glassy items-center px-4 py-12 gap-6 mt-12">
+                    <div class="glassy flex-1 items-center px-4 py-12 gap-6 mt-12">
                         <div
                             class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
                         >
@@ -520,7 +520,7 @@
                         </div>
                     </div>
                     <!-- CARD 5 -->
-                    <div class="glassy items-center px-4 py-12 gap-6">
+                    <div class="hidden md:flex flex-1 flex-col rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg hover:scale-105 transform transition duration-300 items-center px-4 py-12 gap-6">
                         <div
                             class="w-24 h-24 rounded-full overflow-hidden filter drop-shadow-lg"
                         >
@@ -562,7 +562,7 @@
                     class="w-[48px] h-[48px]"
                 />
                 <div class="flex gap-8">
-                    <div class="flex flex-col gap-2">
+                    <div class="hidden md:flex flex-col gap-2">
                         <a href="#" class="p1-sm text-grey-blue">Get started</a>
                         <a href="#" class="p1-sm text-grey-light"
                             >Download app</a
@@ -573,14 +573,14 @@
                         <a href="#" class="p1-sm text-grey-light">Originals</a>
                         <a href="#" class="p1-sm text-grey-light">Plans</a>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="hidden md:flex flex-col gap-2">
                         <a href="#" class="p1-sm text-grey-blue">Account</a>
                         <a href="#" class="p1-sm text-grey-light">Sign in</a>
                         <a href="#" class="p1-sm text-grey-light">Platform</a>
                         <a href="#" class="p1-sm text-grey-light">Support</a>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="p1-sm text-grey-blue">Pride</a>
+                        <a href="https://www.linkedin.com/in/daniel-cruzar/?locale=en_US" class="p1-sm text-grey-blue">Contact</a>
                         <a href="#" class="p1-sm text-grey-light">Partners</a>
                         <a href="#" class="p1-sm text-grey-light">Careers</a>
                         <a href="#" class="p1-sm text-grey-light">Press</a>
@@ -650,7 +650,7 @@
                 <div
                     class="flex py-10 gap-28 border-t-2 border-grey-dark border-opacity-30 shadow-lg"
                 >
-                    <a class="p1-sm text-grey-dark">@2024</a>
+                    <a class="p1-sm text-grey-dark">@Daniel Cruz 2024</a>
                     <a class="p1-sm text-grey-dark">Cookie settings</a>
                     <a class="p1-sm text-grey-dark">Terms and conditions</a>
                     <a class="p1-sm text-grey-dark">Privacy policy</a>

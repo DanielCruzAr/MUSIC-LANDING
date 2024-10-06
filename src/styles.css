@@ -93,7 +93,7 @@ section {
 }
 
 .glassy {
-    @apply flex flex-col flex-1 rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg hover:scale-105 transform transition duration-300;
+    @apply flex flex-col rounded-3xl bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 shadow-lg hover:scale-105 transform transition duration-300;
 }
 
 .glassy-header {
@@ -101,7 +101,7 @@ section {
 }
 
 .genre-card {
-    @apply flex flex-1 flex-col gap-4 h-full hover:scale-105 transform transition duration-300;
+    @apply flex flex-col gap-4 h-full hover:scale-105 transform transition duration-300;
 }
 
 .mirror-img {
