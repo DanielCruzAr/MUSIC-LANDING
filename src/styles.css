@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+    * {
+        @apply scrollbar-thin scrollbar-thumb-current;
+    }
+}
+
 /* FONTS */
 h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-extrabold;
