@@ -12,7 +12,7 @@
     >
         <!-- HEADER -->
         <div class="glassy-header">
-            <img src="icons/logo.png" alt="logo" />
+            <img src="icons/logo.png" alt="logo" id="logo" class="cursor-pointer tracking-wider" />
             <div class="px-4 cursor-pointer lg:hidden" id="burger">
                 <svg
                     class="w-6"
@@ -68,7 +68,7 @@
 
         <main class="flex flex-col my-20 gap-20">
             <!-- HERO -->
-            <section class="flex flex-row">
+            <section class="flex flex-row h-fit">
                 <div class="mt-12">
                     <div>
                         <h1 class="mb-10 gradient-headings">
@@ -90,7 +90,7 @@
                         class="object-contain w-full z-[-1]"
                     />
                     <div
-                        class="hidden md:flex absolute -bottom-12 left-1/4 transform -translate-x-1/2 w-[2000px] h-[15vh] bg-dark z-[-1] blur-lg"
+                        class="hidden md:flex absolute -bottom-40 transform -translate-x-1/4 w-[2000px] h-[30vh] bg-dark z-[-1] blur-lg"
                     ></div>
                 </div>
             </section>
@@ -576,7 +576,8 @@
                 <img
                     src="icons/logo.png"
                     alt="logo"
-                    class="w-[48px] h-[48px]"
+                    class="w-[48px] h-[48px] cursor-pointer tracking-wider"
+                    id="logo"
                 />
                 <div class="hidden md:flex gap-8">
                     <div class="flex flex-col gap-2">
