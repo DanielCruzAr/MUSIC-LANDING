@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Music</title>
+        <link rel="icon" href="icons/logo.png" type="image/png">
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body
@@ -41,6 +42,26 @@
                 <a href="#" class="btn-secondary">Sign up</a>
             </div>
         </div>
+        <ul class="hidden flex flex-col items-end mx-24 p-4" id="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">New arrivals</a>
+            </li>
+            <li>
+                <a href="#">Download</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a href="#">Log in</a>
+            </li>
+            <li>
+                <a href="#">Sign up</a>
+            </li>
+        </ul>
         <div
             class="absolute top-44 -right-12 w-1/2 h-[50vh] transform -translate-x-1/4 -rotate-45 z-[-1] angular-gradient blur-[192px]"
         ></div>
@@ -405,7 +426,7 @@
             </section>
 
             <!-- ARTISTS -->
-            <section class="items-start">
+            <section class="relative items-start">
                 <div class="px-8 mb-8">
                     <h2 class="gradient-headings text-center py-4">
                         Trending Artists
@@ -419,7 +440,7 @@
                     </p>
                 </div>
                 <!-- CARDS CONTAINER -->
-                <div class="relative self-center flex overflow-x-scroll lg:overflow-visible py-2 space-x-4 w-3/4 md:w-full h-fit items-start scroll-smooth">
+                <div class="self-center flex overflow-x-scroll lg:overflow-visible py-2 space-x-4 w-3/4 md:w-full h-fit items-start scroll-smooth">
                     <!-- CARD 1 -->
                     <div class="glassy flex-1 min-w-[200px] lg:min-w-20 items-center px-4 py-12 gap-6">
                         <div
@@ -540,12 +561,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- RECTANGLE -->
-                    <!-- <div
-                        class="absolute top-10 w-screen h-[25vh] z-[-1] rectangle3-gradient blur-[192px]"
-                    ></div> -->
                 </div>
+                <!-- RECTANGLE blur-[192px] -->
+                <div
+                    class="absolute top-1/2 w-screen h-[25vh] z-[-1] rectangle3-gradient blur-[192px]"
+                ></div>
             </section>
         </main>
 
@@ -654,5 +674,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>
